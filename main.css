@@ -149,7 +149,7 @@ a:hover{
 #leftAdvanced{
   position: absolute;
   width: 30%;
-  height: 75%;
+  height: 78%;
   background-color: #4D9A6A;
   margin-top: 2%;
   margin-left: 10%;
@@ -176,12 +176,12 @@ a:hover{
   margin-left: 8%;
   margin-top: 5%;
   margin-bottom: 5%;
+  border-radius: 5px;
 }
 #submitAdvanced{
   font-family: Avenir;
   font-size: 30px;
   margin-left: 35%;
-  margin-top: 10%;
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 5px 5px 2px black;
@@ -213,6 +213,18 @@ a:hover{
   font-family: Avenir;
   box-shadow: 10px 10px 5px black;
 }
+#takeOutResultsDisplay{
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 5%;
+  text-align: center;
+  font-family: Avenir;
+  overflow: scroll;
+}
 #submitTakeOut{
   font-family: Avenir;
   font-size: 30px;
@@ -220,21 +232,42 @@ a:hover{
   border-radius: 5px;
   position: absolute;
   margin-top: 40%;
-  margin-left: 65%;
+  margin-left: 55%;
   box-shadow: 5px 5px 2px black;
 }
 #submitTakeOut:hover{
   color:white;
 }
-#addressTakeOut{
+#zipCodeTakeOut{
   font-family: Avenir;
   font-size: 30px;
   font-weight: bold;
   border-radius: 5px;
   position: absolute;
   margin-top: 40%;
-  margin-left: 20%;
+  margin-left: 30%;
   box-shadow: 5px 5px 2px black;
-  width: 40%;
+  width: 20%;
   text-align: center;
+}
+a:link{
+  text-decoration: none;
+  color: #7BB992;
+}
+a:visited{
+  color:black;
+  text-decoration: underline;
+}
+#takeOutResultsDisplay{
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+.displayTakeout{
+  text-decoration: underline;
+  font-size: 35px;
+  margin-bottom: 1%;
+}
+#takeoutWebsite{
+  color: blue;
 }
