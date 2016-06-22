@@ -1,0 +1,240 @@
+header{
+  background-color: #003E17;
+  height: 10%;
+  width: 100%;
+  font-family: Avenir;
+  font-size: 30px;
+  text-shadow: 2px 2px #4D9A6A;
+  color: #7BB992;
+}
+#splashHeader{
+  margin: 0;
+}
+#opener{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: gray;
+  background-image: url("http://styleznow.com/wp-content/uploads/2015/01/waiting-for-dinner.jpg");
+  opacity: .6;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+a:link{
+  text-decoration: none;
+  text-decoration: underline;
+  color: black;
+}
+a:visited{
+  color:black;
+  text-decoration: underline;
+}
+a:hover{
+  color:black;
+}
+#enterSite{
+  margin: 0;
+  font-size: 40px;
+  border-radius: 12px;
+  position: absolute;
+  margin-top:22%;
+  margin-left: 35%;
+  margin-right: 30%;
+  text-shadow: 2px 2px #003E17;
+  color: white;
+  font-weight: bolder;
+  background-color: #0F5D2C;
+  box-shadow: 10px 10px 5px black;
+}
+footer{
+  height: 5%;
+  background: #003E17;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+}
+/*specific to recipefinder.html*/
+#recipeFinder{
+  background-image: url("http://www.carrensmith.tv/wp-content/uploads/2013/07/Miracles.jpg");
+  opacity: .8;
+  background-size: cover;
+  margin: 0;
+}
+p{
+  color: black;
+}
+p:hover{
+  text-decoration: underline;
+}
+#recipeDisplay{
+  padding: 1%;
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  margin-left: 18%;
+  margin-top: 4%;
+  text-align: center;
+  overflow: scroll;
+  font-family: Avenir;
+  box-shadow: 10px 10px 5px gray;
+}
+#randomRecipe{
+  position: absolute;
+  margin-top: 42%;
+  margin-left: 18%;
+  margin-right: 38%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #7BB992;
+  color: white;
+  font-family: Avenir;
+  box-shadow: 5px 5px 2px gray;
+}
+#takeOut{
+  position: absolute;
+  margin-top: 42%;
+  margin-left: 58%;
+  margin-right: 38%;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #7BB992;
+  color: white;
+  font-family: Avenir;
+  width: 23%;
+  box-shadow: 5px 5px 2px gray;
+}
+#randomRecipe:hover{
+  color: black;
+}
+#advSearch{
+  position: absolute;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #7BB992;
+  color: white;
+  font-family: Avenir;
+  margin-top: 42%;
+  margin-left: 40%;
+  box-shadow: 5px 5px 2px gray;
+}
+#advSearch:hover{
+  color: black;
+}
+img{
+  width: 65%;
+  height: 65%;
+  box-shadow: 10px 10px 5px black;
+}
+/*specific to advanced.html*/
+#advancedBody{
+  background-image: url("http://casafamilyday.org/familyday/files/media/Family%20of%204%20eating%20dinner.jpg");
+  opacity: .9;
+  background-size: cover;
+  margin: 0;
+}
+a:link{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  color:white;
+  text-decoration: underline;
+}
+a:hover{
+  color:black;
+}
+#leftAdvanced{
+  position: absolute;
+  width: 30%;
+  height: 75%;
+  background-color: #4D9A6A;
+  margin-top: 2%;
+  margin-left: 10%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px black;
+}
+#rightAdvanced{
+  position: absolute;
+  width: 45%;
+  height: 80%;
+  background-color: white;
+  margin-left: 49%;
+  margin-top: 1%;
+  border-radius: 5px;
+  font-family: Avenir;
+  text-align: center;
+  box-shadow: 10px 10px 5px black;
+}
+.searchInputs{
+  text-align: center;
+  font-size: 25px;
+  width: 80%;
+  font: Avenir;
+  margin-left: 8%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#submitAdvanced{
+  font-family: Avenir;
+  font-size: 30px;
+  margin-left: 35%;
+  margin-top: 10%;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px black;
+}
+.recipeOptions{
+  font-size: 25px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+}
+/*specific to takeout.html*/
+#takeOutBody{
+  background-image: url("https://cdn3.vox-cdn.com/thumbor/isWyW0RAN1BNgPxSgPw1MKeKURs=/0x52:1000x615/1310x737/cdn0.vox-cdn.com/uploads/chorus_image/image/44395822/takeout-christmas-stats1.0.0.jpg");
+  opacity: .9;
+  background-size: cover;
+  margin: 0;
+}
+#takeOutResults{
+  height: 60%;
+  width: 80%;
+  background-color: #4D9A6A;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 10%;
+  text-align: center;
+  font-family: Avenir;
+  box-shadow: 10px 10px 5px black;
+}
+#submitTakeOut{
+  font-family: Avenir;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 65%;
+  box-shadow: 5px 5px 2px black;
+}
+#submitTakeOut:hover{
+  color:white;
+}
+#addressTakeOut{
+  font-family: Avenir;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 20%;
+  box-shadow: 5px 5px 2px black;
+  width: 40%;
+  text-align: center;
+}

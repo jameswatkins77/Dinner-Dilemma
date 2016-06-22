@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body id="advancedBody">
+    <header>
+      <h1 id="splashHeader">Dinner Dilemma</h1>
+    </header>
+    <div id="leftAdvanced">
+      <select class="recipeOptions" name="cuisine" id="cuisineInput">
+        <option value="option" disabled selected>Cuisine</option>
+        <option value="African">African</option>
+        <option value="American">American</option>
+        <option value="British">British</option>
+        <option value="Cajun">Cajun</option>
+        <option value="Caribbean">Caribbean</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Eastern European">Eastern European</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+        <option value="Greek">Greek</option>
+        <option value="Indian">Indian</option>
+        <option value="Irish">Irish</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Jewish">Jewish</option>
+        <option value="Korean">Korean</option>
+        <option value="Latin American">Latin American</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Middle Eastern">Middle Eastern</option>
+        <option value="Nordic">Nordic</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Southern">Southern</option>
+        <option value="Thai">Thai</option>
+        <option value="Vietnamese">Vietnamese</option>
+      </select>
+      <select class="recipeOptions" name="allergies" id="allergiesInput">
+        <option value="option" disabled selected>Allergies</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Egg">Egg</option>
+        <option value="Gluten">Gluten</option>
+        <option value="Peanut">Peanut</option>
+        <option value="Sesame">Sesame</option>
+        <option value="Seafood">Seafood</option>
+        <option value="Shellfish">Shellfish</option>
+        <option value="Soy">Soy</option>
+        <option value="Sulfite">Sulfite</option>
+        <option value="Tree Nut">Tree Nut</option>
+        <option value="Wheat">Wheat</option>
+      </select>
+      <select class="recipeOptions" name="diet" id="dietInput">
+        <option value="option" disabled selected>Diet</option>
+        <option value="Lacto Vegetarian">Lacto Vegetarian</option>
+        <option value="Ovo Vegetarian">Ovo Vegetarian</option>
+        <option value="Paleo">Paleo</option>
+        <option value="Pescetarian">Pescetarian</option>
+        <option value="Primal">Primal</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Vegetarian">Vegetarian</option>
+      </select>
+      <input type="text" name="name" value="" class="searchInputs" id="ingredients" placeholder="ingredients">
+      <input type="number" name="name" value="" class="searchInputs" id="maxCalories" max="3000" placeholder="max calories">
+      <input type="text" name="name" value="" class="searchInputs" id="advancedKeyword" placeholder="keyword">
+      <button type="button" name="button" id="submitAdvanced">Submit</button>
+    </div>
+    <div id="rightAdvanced">Recipes which match your criteria will appear here.
+    </div>
+    <footer>
+      <p id="copyright">&copy Jim Watkins 2016</p>
+    </footer>
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
