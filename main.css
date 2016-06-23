@@ -16,21 +16,9 @@ header{
   margin: 0;
   background-color: gray;
   background-image: url("http://styleznow.com/wp-content/uploads/2015/01/waiting-for-dinner.jpg");
-  opacity: .6;
+  opacity: .7;
   background-size: cover;
   background-repeat: no-repeat;
-}
-a:link{
-  text-decoration: none;
-  text-decoration: underline;
-  color: black;
-}
-a:visited{
-  color:black;
-  text-decoration: underline;
-}
-a:hover{
-  color:black;
 }
 #enterSite{
   margin: 0;
@@ -41,10 +29,13 @@ a:hover{
   margin-left: 35%;
   margin-right: 30%;
   text-shadow: 2px 2px #003E17;
-  color: white;
+  color: black;
   font-weight: bolder;
   background-color: #0F5D2C;
   box-shadow: 10px 10px 5px black;
+}
+#enterSite:hover{
+  color:white;
 }
 footer{
   height: 5%;
@@ -81,47 +72,41 @@ p:hover{
   font-family: Avenir;
   box-shadow: 10px 10px 5px gray;
 }
-#randomRecipe{
+.advancedButtons{
   position: absolute;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #7BB992;
+  color: black;
+  font-family: Avenir;
+  font-weight: bold;
+  box-shadow: 5px 5px 2px gray;
+}
+#randomRecipe{
   margin-top: 42%;
   margin-left: 18%;
   margin-right: 38%;
-  font-size: 25px;
-  border-radius: 5px;
-  background-color: #7BB992;
+}
+#randomRecipe:hover{
   color: white;
-  font-family: Avenir;
-  box-shadow: 5px 5px 2px gray;
 }
 #takeOut{
-  position: absolute;
   margin-top: 42%;
   margin-left: 58%;
   margin-right: 38%;
-  font-size: 25px;
-  border-radius: 5px;
-  background-color: #7BB992;
-  color: white;
-  font-family: Avenir;
-  width: 23%;
-  box-shadow: 5px 5px 2px gray;
+  width: 21%;
+  padding: .3%;
 }
-#randomRecipe:hover{
-  color: black;
+#takeOut:hover{
+  color: white;
 }
 #advSearch{
-  position: absolute;
-  font-size: 25px;
-  border-radius: 5px;
-  background-color: #7BB992;
-  color: white;
-  font-family: Avenir;
   margin-top: 42%;
   margin-left: 40%;
-  box-shadow: 5px 5px 2px gray;
+  padding: .3%;
 }
 #advSearch:hover{
-  color: black;
+  color: white;
 }
 img{
   width: 65%;
@@ -186,6 +171,9 @@ a:hover{
   border-radius: 5px;
   box-shadow: 5px 5px 2px black;
 }
+#submitAdvanced:hover{
+  color: white;
+}
 .recipeOptions{
   font-size: 25px;
   width: 80%;
@@ -232,7 +220,7 @@ a:hover{
   border-radius: 5px;
   position: absolute;
   margin-top: 40%;
-  margin-left: 55%;
+  margin-left: 52%;
   box-shadow: 5px 5px 2px black;
 }
 #submitTakeOut:hover{
@@ -245,7 +233,7 @@ a:hover{
   border-radius: 5px;
   position: absolute;
   margin-top: 40%;
-  margin-left: 30%;
+  margin-left: 27%;
   box-shadow: 5px 5px 2px black;
   width: 20%;
   text-align: center;

@@ -8,7 +8,7 @@ $("#randomRecipe").click(function(){
         $("#recipeDisplay").append('<img src="'+result.image+'" alt="Recipe">');
         $("#recipeDisplay").append('<a href="'+result.sourceUrl+'"><p>Click here for recipe</p>'+'</a>');
     }});
-})
+});
 
 $("#submitAdvanced").click(function(){
   var cuisine_input = $("#cuisineInput option:selected").val().toLowerCase();
@@ -42,7 +42,7 @@ $("#submitAdvanced").click(function(){
     } else {
       return ("");
     }
-    }
+  };
   var max_calories = $("#maxCalories").val();
   var advanced_keyword = $("#advancedKeyword").val().toLowerCase();
   console.log(allergies_input());
@@ -64,7 +64,7 @@ $("#submitAdvanced").click(function(){
         }});
     }
     }});
-})
+});
 $("#submitTakeOut").click(function(){
   $("#takeOutResultsDisplay").html("");
   var zip = ($("#zipCodeTakeOut").val());
@@ -75,11 +75,11 @@ $("#submitTakeOut").click(function(){
           console.log(result.result.types[0]);
           if (result.result.types[0] === "meal_takeaway" || "meal_delivery" || "restaurant") {
             $("#takeOutResultsDisplay").append('<p class ="displayTakeout">'+'Name: '+result.result.name);
-            $("#takeOutResultsDisplay").append("Rating: "+result.result.rating+"<br>")
+            $("#takeOutResultsDisplay").append("Rating: "+result.result.rating+"<br>");
             $("#takeOutResultsDisplay").append('<a id ="takeoutWebsite" href ='+result.result.url+'>Click for Google website </a>'+'<br>');
             $("#takeOutResultsDisplay").append("Phone Number: "+result.result.formatted_phone_number);
           }
         }});
     }
     }});
-})
+});
