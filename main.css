@@ -9,6 +9,7 @@ header{
 }
 #splashHeader{
   margin: 0;
+  margin-left: 1%;
 }
 #opener{
   height: 100vh;
@@ -84,7 +85,7 @@ p:hover{
 }
 #randomRecipe{
   margin-top: 42%;
-  margin-left: 18%;
+  margin-left: 15%;
   margin-right: 38%;
 }
 #randomRecipe:hover{
@@ -92,7 +93,7 @@ p:hover{
 }
 #takeOut{
   margin-top: 42%;
-  margin-left: 58%;
+  margin-left: 61%;
   margin-right: 38%;
   width: 21%;
   padding: .3%;
@@ -109,7 +110,7 @@ p:hover{
   color: white;
 }
 img{
-  width: 65%;
+  width: 55%;
   height: 65%;
   box-shadow: 10px 10px 5px black;
 }
@@ -152,6 +153,7 @@ a:hover{
   font-family: Avenir;
   text-align: center;
   box-shadow: 10px 10px 5px black;
+  overflow: scroll;
 }
 .searchInputs{
   text-align: center;
