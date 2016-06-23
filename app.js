@@ -9,53 +9,22 @@ $("#randomRecipe").click(function(){
         $("#recipeDisplay").append('<a href="'+result.sourceUrl+'"><p>Click here for recipe</p>'+'</a>');
     }});
 });
-
 $("#submitAdvanced").click(function(){
   $("#rightAdvanced").html("");
-  var cuisine_input = $("#cuisineInput option:selected").val().toLowerCase();
-  var diet_input = $("#dietInput option:selected").val().toLowerCase();
-  var allergies_input = function(array){
-    var bar = $("#allergiesInput option:selected");
-    if (bar.length>1) {
-      var foo =[];
-      for (var i = 0; i < bar.length-1; i++) {
-        foo += bar[i].value+"%2C"+"+";
-      }
-      foo += bar[bar.length-1].value;
-      return foo;
-    } else if (bar.length === 1) {
-      return $("#allergiesInput option:selected").val();
-    } else{
-      return("");
-    }
-  };
-  var ingredients = function(array){
-    var bar = $("#ingredients").val().split(", ");
-    if (bar.length>1) {
-      var foo = [];
-      for (var i = 0; i < bar.length-1; i++) {
-        foo += bar[i]+"%2C"+"+";
-      }
-      foo += bar[bar.length-1];
-      return foo;
-    } else if (bar.length === 1) {
-      return $("#ingredients").val().split(",").toString();
-    } else {
-      return ("");
-    }
-  };
-  var max_calories = $("#maxCalories").val();
-  var advanced_keyword = $("#advancedKeyword").val().toLowerCase();
   $.ajax({
-    url: "https:spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/searchComplex?cuisine="+cuisine_input+"&diet="+diet_input+"&includeIngredients="+ingredients()+"&intolerances="+allergies_input()+"&limitLicense=false&maxCalories="+max_calories+"&number=100&offset=0&query="+advanced_keyword+"&ranking=1&mashape-key=56qAxsJjW9mshzGaoLVCCDMefIskp1WYULzjsnMivzE2pLMQin",
+    url: "https:spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/searchComplex?"+cuisine_input()+diet_input()+ingredients()+allergies_input()+"&limitLicense=false&"+max_calories()+"&number=100&offset=0&"+advanced_keyword()+"&ranking=1&mashape-key=56qAxsJjW9mshzGaoLVCCDMefIskp1WYULzjsnMivzE2pLMQin",
     success: function(result){
+      if (result.results.length === 0) {
+        return $("#rightAdvanced").append('<h2>There are no matching recipes for those criteria.'+'<br>'+'Please try again.</h2>');
+      }
+    console.log(result.results.length);
     for (var i = 0; i < result.results.length; i++) {
       var id = result.results[i].id;
       $.ajax({
         url: "https:spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/"+id+"/information?mashape-key=56qAxsJjW9mshzGaoLVCCDMefIskp1WYULzjsnMivzE2pLMQin&includeNutrition=false",
         success: function(result){
           $("#rightAdvanced").append('<h1>'+result.title+'</h1>');
-          $("#rightAdvanced").append('<img src=' +result.image+ ' alt="Recipe">');
+          $("#rightAdvanced").append('<img class="advanced" src=' +result.image+ ' alt="Recipe">');
           $("#rightAdvanced").append('<a href='+result.sourceUrl+'><p>Click here for recipe</p>'+'</a>');
         }});
     }
@@ -64,10 +33,10 @@ $("#submitAdvanced").click(function(){
 $("#submitTakeOut").click(function(){
   $("#takeOutResultsDisplay").html("");
   var zip = ($("#zipCodeTakeOut").val());
-  $.ajax({url: "https:maps.googleapis.com/maps/api/place/textsearch/json?query=delivery+in+"+zip+"&key=AIzaSyBi6-ASk_2LLrX2WZxLEcbrcT698EL72F8", success: function(result){
+  $.ajax({url: "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=delivery+in+"+zip+"&key=AIzaSyBi6-ASk_2LLrX2WZxLEcbrcT698EL72F8", success: function(result){
     for (var i = 0; i < result.results.length; i++) {
       var place_id = result.results[i].place_id;
-      $.ajax({url: "https:maps.googleapis.com/maps/api/place/details/json?placeid="+place_id+"&key=AIzaSyBi6-ASk_2LLrX2WZxLEcbrcT698EL72F8", success: function(result){
+      $.ajax({url: "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?placeid="+place_id+"&key=AIzaSyBi6-ASk_2LLrX2WZxLEcbrcT698EL72F8", success: function(result){
           if (isFoodDeliveryPlace(result.result.types[0])) {
             $("#takeOutResultsDisplay").append('<p class ="displayTakeout">'+'Name: '+result.result.name);
             $("#takeOutResultsDisplay").append("Rating: "+result.result.rating+"<br>");

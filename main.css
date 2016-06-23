@@ -26,17 +26,18 @@ header{
   font-size: 40px;
   border-radius: 12px;
   position: absolute;
+  padding: 1%;
   margin-top:22%;
   margin-left: 35%;
   margin-right: 30%;
   text-shadow: 2px 2px #003E17;
-  color: black;
+  color: white;
   font-weight: bolder;
   background-color: #0F5D2C;
   box-shadow: 10px 10px 5px black;
 }
 #enterSite:hover{
-  color:white;
+  color:black;
 }
 footer{
   height: 5%;
@@ -74,6 +75,7 @@ p:hover{
   box-shadow: 10px 10px 5px gray;
 }
 .advancedButtons{
+  text-align: center;
   position: absolute;
   font-size: 25px;
   border-radius: 5px;
@@ -97,6 +99,7 @@ p:hover{
   margin-right: 38%;
   width: 21%;
   padding: .3%;
+  color: black;
 }
 #takeOut:hover{
   color: white;
@@ -105,6 +108,7 @@ p:hover{
   margin-top: 42%;
   margin-left: 40%;
   padding: .3%;
+  color: black;
 }
 #advSearch:hover{
   color: white;
@@ -145,12 +149,14 @@ a:hover{
 #rightAdvanced{
   position: absolute;
   width: 45%;
-  height: 80%;
+  height: 75%;
   background-color: white;
   margin-left: 49%;
-  margin-top: 1%;
+  margin-top: 2%;
+  padding: 1%;
   border-radius: 5px;
   font-family: Avenir;
+  font-size: 25px;
   text-align: center;
   box-shadow: 10px 10px 5px black;
   overflow: scroll;
@@ -184,6 +190,10 @@ a:hover{
   margin-bottom: 5%;
   border-radius: 5px;
 }
+.advanced{
+  width: 65%;
+  height: 50%;
+}
 /*specific to takeout.html*/
 #takeOutBody{
   background-image: url("https://cdn3.vox-cdn.com/thumbor/isWyW0RAN1BNgPxSgPw1MKeKURs=/0x52:1000x615/1310x737/cdn0.vox-cdn.com/uploads/chorus_image/image/44395822/takeout-christmas-stats1.0.0.jpg");
@@ -193,12 +203,12 @@ a:hover{
 }
 #takeOutResults{
   height: 60%;
-  width: 80%;
+  width: 60%;
   background-color: #4D9A6A;
   border-radius: 5px;
   position: absolute;
-  margin-top: 5%;
-  margin-left: 10%;
+  margin-top: 3%;
+  margin-left: 18%;
   text-align: center;
   font-family: Avenir;
   box-shadow: 10px 10px 5px black;
@@ -214,6 +224,9 @@ a:hover{
   text-align: center;
   font-family: Avenir;
   overflow: scroll;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
 }
 #submitTakeOut{
   font-family: Avenir;
@@ -240,19 +253,6 @@ a:hover{
   width: 20%;
   text-align: center;
 }
-a:link{
-  text-decoration: none;
-  color: #7BB992;
-}
-a:visited{
-  color:black;
-  text-decoration: underline;
-}
-#takeOutResultsDisplay{
-  font-size: 25px;
-  font-weight: bold;
-  color: black;
-}
 .displayTakeout{
   text-decoration: underline;
   font-size: 35px;
@@ -260,4 +260,70 @@ a:visited{
 }
 #takeoutWebsite{
   color: blue;
+}
+@media (max-width: 533px) {
+  #enterSite{
+    margin: 0;
+    font-size:30px;
+    border-radius: 12px;
+    position: absolute;
+    padding: 1%;
+    margin-top: 62%;
+    margin-left: 22%;
+    margin-right: 22%;
+    text-shadow: 2px 2px #003E17;
+    color: white;
+    font-weight: bolder;
+    background-color: #0F5D2C;
+    box-shadow: 10px 10px 5px black;
+    width: 50%;
+  }
+  header{
+    background-color: #003E17;
+    height: 10%;
+    width: 100%;
+    font-family: Avenir;
+    font-size: 20px;
+    text-shadow: 2px 2px #4D9A6A;
+    color: #7BB992;
+  }
+  .advancedButtons{
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    background-color: #7BB992;
+    color: black;
+    font-family: Avenir;
+    font-weight: bold;
+    box-shadow: 5px 5px 2px gray;
+    bottom: 15%;
+    width: 19%;
+  }
+  #zipCodeTakeOut{
+    font-family: Avenir;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 27%;
+    box-shadow: 5px 5px 2px black;
+    width: 20%;
+    text-align: center;
+    bottom: 15%;
+    right: 65%;
+  }
+  #submitTakeOut{
+    font-family: Avenir;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 52%;
+    box-shadow: 5px 5px 2px black;
+    bottom: 15%;
+    right: 10%;
+    width: 45%;
+  }
 }
