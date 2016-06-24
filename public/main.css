@@ -19,6 +19,7 @@ header{
   background-image: url("http://styleznow.com/wp-content/uploads/2015/01/waiting-for-dinner.jpg");
   opacity: .7;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 #enterSite{

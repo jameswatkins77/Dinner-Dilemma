@@ -1,6 +1,6 @@
 function isFoodDeliveryPlace(type) {
   return type === "meal_takeaway" || type === "meal_delivery" || type === "restaurant"
-}
+};
 var cuisine_input = function(){
   if ($("#cuisineInput option:selected").val().toLowerCase()==="") {
     return "";
