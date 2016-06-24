@@ -47,6 +47,10 @@ footer{
   bottom: 0px;
   color: white;
 }
+#copyright{
+  color:white;
+  right: 5px;
+}
 /*specific to recipefinder.html*/
 #recipeFinder{
   background-image: url("http://www.carrensmith.tv/wp-content/uploads/2013/07/Miracles.jpg");
@@ -118,10 +122,27 @@ img{
   height: 65%;
   box-shadow: 10px 10px 5px black;
 }
+#spoonacular{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-image: url("https://lh6.googleusercontent.com/wo0fSemeRmkEYhs-13X7COOD6O8X8y9Mx5QK49eJjO73rvldyUDoXjqvfQuzA8blXQndD4A7WEnXaNikipBvlNXLHDre5DHYUZ415hjZkusW7m1-qQ3d99O4");
+  background-size: contain;
+  border-radius: 15px;
+  top: 5px;
+  right: 15px;
+  box-shadow: 5px 5px 2px black;
+}
+#spoonacularCredit{
+  position: absolute;
+  right: 100px;
+  font-size: 15px;
+  top: 35px;
+}
 /*specific to advanced.html*/
 #advancedBody{
   background-image: url("http://casafamilyday.org/familyday/files/media/Family%20of%204%20eating%20dinner.jpg");
-  opacity: .9;
+  opacity: .95;
   background-size: cover;
   margin: 0;
 }
@@ -195,9 +216,26 @@ a:hover{
   height: 50%;
 }
 /*specific to takeout.html*/
+#googleCredit{
+  position: absolute;
+  right: 140px;
+  font-size: 15px;
+  top: 35px;
+}
+#google{
+  width: 110px;
+  height: 60px;
+  position: absolute;
+  background-image: url("http://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.2-hp.gif");
+  background-size: cover;
+  border-radius: 15px;
+  top: 10px;
+  right: 15px;
+  box-shadow: 5px 5px 2px black;
+}
 #takeOutBody{
   background-image: url("https://cdn3.vox-cdn.com/thumbor/isWyW0RAN1BNgPxSgPw1MKeKURs=/0x52:1000x615/1310x737/cdn0.vox-cdn.com/uploads/chorus_image/image/44395822/takeout-christmas-stats1.0.0.jpg");
-  opacity: .9;
+  opacity: .95;
   background-size: cover;
   margin: 0;
 }
@@ -219,7 +257,7 @@ a:hover{
   background-color: white;
   border-radius: 5px;
   position: absolute;
-  margin-top: 2%;
+  margin-top: 3.5%;
   margin-left: 5%;
   text-align: center;
   font-family: Avenir;
