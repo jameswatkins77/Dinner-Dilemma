@@ -4,8 +4,8 @@ header{
   width: 100%;
   font-family: Avenir;
   font-size: 30px;
-  text-shadow: 2px 2px #4D9A6A;
-  color: #7BB992;
+  text-shadow: 2px 2px black;
+  color: #686E1E;
 }
 #splashHeader{
   margin: 0;
@@ -50,7 +50,8 @@ footer{
 }
 #copyright{
   color:white;
-  right: 5px;
+  right: 2%;
+  position: absolute;
 }
 /*specific to recipefinder.html*/
 #recipeFinder{
@@ -61,6 +62,7 @@ footer{
 }
 p{
   color: black;
+  text-decoration: underline;
 }
 p:hover{
   text-decoration: underline;
@@ -89,6 +91,7 @@ p:hover{
   font-family: Avenir;
   font-weight: bold;
   box-shadow: 5px 5px 2px gray;
+  bottom: 10%;
 }
 #randomRecipe{
   margin-top: 42%;
@@ -143,20 +146,9 @@ img{
 /*specific to advanced.html*/
 #advancedBody{
   background-image: url("http://casafamilyday.org/familyday/files/media/Family%20of%204%20eating%20dinner.jpg");
-  opacity: .95;
+  opacity: .9;
   background-size: cover;
   margin: 0;
-}
-a:link{
-  text-decoration: none;
-  color: white;
-}
-a:visited{
-  color:white;
-  text-decoration: underline;
-}
-a:hover{
-  color:black;
 }
 #leftAdvanced{
   position: absolute;
@@ -171,7 +163,7 @@ a:hover{
 #rightAdvanced{
   position: absolute;
   width: 45%;
-  height: 75%;
+  height: 60%;
   background-color: white;
   margin-left: 49%;
   margin-top: 2%;
@@ -213,8 +205,30 @@ a:hover{
   border-radius: 5px;
 }
 .advanced{
-  width: 65%;
+  width: 60%;
   height: 50%;
+}
+#advancedTakeOut{
+  margin-top: 42%;
+  margin-left: 76%;
+  margin-right: 38%;
+  width: 20%;
+  padding: .3%;
+  color: black;
+}
+#advancedTakeOut:hover{
+  color: white;
+}
+#advancedRandom{
+  margin-top: 42%;
+  margin-left: 49%;
+  margin-right: 38%;
+  width: 25%;
+  padding: .3%;
+  color: black;
+}
+#advancedRandom:hover{
+  color: white;
 }
 /*specific to takeout.html*/
 #googleCredit{
@@ -273,8 +287,8 @@ a:hover{
   font-weight: bold;
   border-radius: 5px;
   position: absolute;
-  margin-top: 40%;
-  margin-left: 52%;
+  bottom: 12%;
+  right: 43.5%;
   box-shadow: 5px 5px 2px black;
 }
 #submitTakeOut:hover{
@@ -282,15 +296,16 @@ a:hover{
 }
 #zipCodeTakeOut{
   font-family: Avenir;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   border-radius: 5px;
   position: absolute;
-  margin-top: 40%;
   margin-left: 27%;
   box-shadow: 5px 5px 2px black;
   width: 20%;
   text-align: center;
+  bottom: 12%;
+  right: 65%;
 }
 .displayTakeout{
   text-decoration: underline;
@@ -300,6 +315,27 @@ a:hover{
 #takeoutWebsite{
   color: blue;
 }
+#takeOutToRandom{
+  font-family: Avenir;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  box-shadow: 5px 5px 2px black;
+  width: 20%;
+  text-align: center;
+  bottom: 12%;
+  right: 20%;
+  background-color: #4D9A6A;
+  color: black;
+}
+#takeOutToRandom:hover{
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+/*specific to smaller screens*/
 @media (max-width: 533px) {
   #enterSite{
     margin: 0;

@@ -5,7 +5,7 @@ $("#randomRecipe").click(function(){
     success: function(result){
         $("#recipeDisplay").html("");
         $("#recipeDisplay").append('<h1>'+result.title+'</h1>');
-        $("#recipeDisplay").append('<img src="'+result.image+'" alt="Recipe">');
+        $("#recipeDisplay").append('<a href="'+result.sourceUrl+'">'+'<img src="'+result.image+'" alt="Recipe">'+'</a>');
         $("#recipeDisplay").append('<a href="'+result.sourceUrl+'"><p>Click here for recipe</p>'+'</a>');
     }});
 });
@@ -17,14 +17,13 @@ $("#submitAdvanced").click(function(){
       if (result.results.length === 0) {
         return $("#rightAdvanced").append('<h2>There are no matching recipes for those criteria.'+'<br>'+'Please try again.</h2>');
       }
-    console.log(result.results.length);
     for (var i = 0; i < result.results.length; i++) {
       var id = result.results[i].id;
       $.ajax({
         url: "https:spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/"+id+"/information?mashape-key=56qAxsJjW9mshzGaoLVCCDMefIskp1WYULzjsnMivzE2pLMQin&includeNutrition=false",
         success: function(result){
           $("#rightAdvanced").append('<h1>'+result.title+'</h1>');
-          $("#rightAdvanced").append('<img class="advanced" src=' +result.image+ ' alt="Recipe">');
+          $("#rightAdvanced").append('<a href='+result.sourceUrl+'>'+'<img class="advanced" src=' +result.image+ ' alt="Recipe">'+'</a>');
           $("#rightAdvanced").append('<a href='+result.sourceUrl+'><p>Click here for recipe</p>'+'</a>');
         }});
     }
